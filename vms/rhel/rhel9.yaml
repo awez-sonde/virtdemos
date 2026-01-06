@@ -1,12 +1,12 @@
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
-  name: rhel-9-amaranth-mite-44
+  name: rhel-9-test
   namespace: vm-gitops
 spec:
   dataVolumeTemplates:
     - metadata:
-        name: rhel-9-amaranth-mite-44-volume
+        name: rhel-9-test-volume
       spec:
         sourceRef:
           kind: DataSource
@@ -35,7 +35,7 @@ spec:
       subdomain: headless
       volumes:
         - dataVolume:
-            name: rhel-9-amaranth-mite-44-volume
+            name: rhel-9-test-volume
           name: rootdisk
         - cloudInitNoCloud:
             userData: |
