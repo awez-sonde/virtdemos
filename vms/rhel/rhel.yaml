@@ -26,7 +26,7 @@ spec:
           resources:
             requests:
               storage: 30Gi
-          storageClassName: ocs-storagecluster-ceph-rbd
+          storageClassName: ocs-external-storagecluster-ceph-rbd
           volumeMode: Block
   running: true
   template:
