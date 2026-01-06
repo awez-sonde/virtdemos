@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: vms/rhel
-    repoURL: "https://github.com/gmidha1/virtdemos.git"
+    repoURL: "https://github.com/awez-sonde/virtdemos.git"
     targetRevision: main
   syncPolicy:
     syncOptions:
